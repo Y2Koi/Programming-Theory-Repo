@@ -21,18 +21,13 @@ public class RedEnemy : Enemy
         if (transform.position.z >= -16.5f)
         {
             // Move towards the player
-            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, 5f * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, 7.5f * Time.deltaTime);
             forwardDirection = directionToPlayer.normalized; // Update forward direction
         }
         else
         {
             // Move forward in the last known direction
-            transform.position += forwardDirection * 5f * Time.deltaTime;
-        }
-
-        if (transform.position.z < -22)
-        {
-            Destroy(gameObject);
+            transform.position += forwardDirection * 7.5f * Time.deltaTime;
         }
     }
 

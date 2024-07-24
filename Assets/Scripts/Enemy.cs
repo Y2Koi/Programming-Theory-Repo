@@ -28,10 +28,5 @@ public class Enemy : MonoBehaviour
             // Move forward in the last known direction
             transform.position += forwardDirection * Time.deltaTime;
         }
-
-        if (transform.position.z < -22)
-        {
-            Destroy(gameObject);
-        }
     }
 }
