@@ -33,12 +33,12 @@ public class PlayerController : MonoBehaviour
             if (pooledProjectile != null)
             {
                 pooledProjectile.SetActive(true); // activate it
-                pooledProjectile.transform.position = transform.position; // position it at player
+                pooledProjectile.transform.position = transform.position + Vector3.forward; // position it at player
             }
         }
     }
 
-    void OnCollisionEnter(Collision other)
+    /*void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
@@ -47,5 +47,5 @@ public class PlayerController : MonoBehaviour
             Destroy(gameObject);
             Debug.Log("Game Over!");
         }
-    }
+    }*/
 }

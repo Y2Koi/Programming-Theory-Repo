@@ -6,7 +6,7 @@ using UnityEngine.Pool;
 public class ProjectilePooler : MonoBehaviour
 {
     public static ProjectilePooler SharedInstance;
-    public List<GameObject> pooledObjects;
+    [SerializeField] List<GameObject> pooledObjects;
     [SerializeField] GameObject objectToPool;
     private int amountToPool = 2;
 
