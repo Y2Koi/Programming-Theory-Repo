@@ -56,6 +56,8 @@ public class Enemy : MonoBehaviour
         otherObject.gameObject.SetActive(false);
         Destroy(gameObject);
     }
+
+    // ABSTRACTION
     protected void AddScore()
     {
         if (GameManager.Instance.gameOver == false)

@@ -15,7 +15,7 @@ public class TitleManager : MonoBehaviour
     public void ResetHighScore()
     {
         PlayerPrefs.SetInt("HighScore", 0);
-        Debug.Log("High score has been reset");
+        Debug.Log("High score has been reset.");
     }
 
     public void ExitGame()

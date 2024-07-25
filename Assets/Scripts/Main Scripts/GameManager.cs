@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Button exitButton;
     public static GameManager Instance; // Singleton instance
 
+    // ENCAPSULATION
     private int score = 0;
     public int Score
     {
@@ -57,6 +58,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // ABSTRACTION
     private void GameOver()
     {
         gameOver = true;
