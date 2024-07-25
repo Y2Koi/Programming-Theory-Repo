@@ -45,7 +45,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         gameOver = false;
-        PlayerPrefs.SetInt("HighScore", 0); //USE THIS TO TEST HIGH SCORE!
         UpdateHighScoreText();
     }
 
@@ -69,14 +68,16 @@ public class GameManager : MonoBehaviour
     private void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        UpdateHighScoreText();
     }
 
     private void ReturnToTitle()
     {
         SceneManager.LoadScene("Title Screen");
+        UpdateHighScoreText();
     }
 
-    public void checkHighScore()
+    public void CheckHighScore()
     {
         if (score > PlayerPrefs.GetInt("HighScore", 0))
         {

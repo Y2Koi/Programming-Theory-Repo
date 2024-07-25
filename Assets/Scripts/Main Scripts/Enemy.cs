@@ -62,7 +62,7 @@ public class Enemy : MonoBehaviour
         {
             GameManager.Instance.Score += destroyScore;
             GameManager.Instance.scoreText.text = "Score: " + GameManager.Instance.Score;
-            GameManager.Instance.checkHighScore();
+            GameManager.Instance.CheckHighScore();
         }
     }
 
@@ -75,7 +75,7 @@ public class Enemy : MonoBehaviour
             {
                 GameManager.Instance.Score -= missScore;
                 GameManager.Instance.scoreText.text = "Score: " + GameManager.Instance.Score;
-                GameManager.Instance.checkHighScore();
+                GameManager.Instance.CheckHighScore();
             }
         }
     }
