@@ -13,8 +13,6 @@ GameObject:
   - component: {fileID: 8237523569915981703}
   - component: {fileID: 2285386632405084943}
   - component: {fileID: 3593575711244315114}
-  - component: {fileID: -8528971549444858834}
-  - component: {fileID: -7210405505184602317}
   - component: {fileID: -2798255974101360220}
   m_Layer: 0
   m_Name: Red Enemy
@@ -121,30 +119,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ac387816922bbf489874511ca96d865, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-8528971549444858834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7033487876245778074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab61896c0a9d29e439da8c4a283a0f82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &-7210405505184602317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7033487876245778074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e66793b152cf794d8e13f07a2caa3d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  speed: 1
+  destroyScore: 20
+  missScore: 5
 --- !u!54 &-2798255974101360220
 Rigidbody:
   m_ObjectHideFlags: 0

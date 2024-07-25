@@ -8,7 +8,7 @@ public class ProjectilePooler : MonoBehaviour
     public static ProjectilePooler SharedInstance;
     [SerializeField] List<GameObject> pooledObjects;
     [SerializeField] GameObject objectToPool;
-    private int amountToPool = 2;
+    private int amountToPool = 1;
 
     void Awake()
     {

@@ -37,15 +37,4 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-
-    /*void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            // Just deactivate the projectile and destroy the enemy
-            other.gameObject.SetActive(false);
-            Destroy(gameObject);
-            Debug.Log("Game Over!");
-        }
-    }*/
 }

@@ -13,8 +13,6 @@ GameObject:
   - component: {fileID: 6839412294571095473}
   - component: {fileID: 7730412831582804755}
   - component: {fileID: 1480768892819986917}
-  - component: {fileID: 694153306070236601}
-  - component: {fileID: 1856233154306989963}
   - component: {fileID: -6458667819517913}
   m_Layer: 0
   m_Name: Yellow Enemy
@@ -121,30 +119,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1029180eef255074ba7fe49021fecdc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &694153306070236601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5039486921305975129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab61896c0a9d29e439da8c4a283a0f82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1856233154306989963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5039486921305975129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e66793b152cf794d8e13f07a2caa3d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  speed: 1
+  destroyScore: 20
+  missScore: 5
 --- !u!54 &-6458667819517913
 Rigidbody:
   m_ObjectHideFlags: 0
